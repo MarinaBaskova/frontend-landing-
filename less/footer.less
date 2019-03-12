@@ -4,29 +4,59 @@
     padding-bottom: 10rem;
     background:  #0D47A1;
     text-align: center;
+    @media @phone {
+        padding-bottom: 0;
+    }
+
     .footer-text {
         font-size: 2.5rem;
         font-family: 'open sans';
         color: #E3F2FD;
-        
+        @media @phone {
+            text-align: center;
+            margin: 0 auto;
+            padding-right: 3rem;
+            padding-left: 3rem;
+            line-height: 4rem;
+        }        
     }
 }
 
-
 .footer-btn {
-    font-family: 'open sans';
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: block;
+    width: 10%;
+    height: 3rem;
     background-color: #1976D2;
     color: #E3F2FD;
+    font-size: 1.7rem;
+    font-family: 'open sans';
+    border: none;
     outline: none;
-    margin-top: 3rem;
-    font-size: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    @media @phone {
+        width: 40%;
+        height: 5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 5rem;
+    }
 
 }
 .copy-right {
     font-size: 1rem;
     font-family: 'open sans';
-    color: black;
+    color: #05101b;
     margin-top: 12rem;
     text-align: center;
 
+    @media @phone {
+        margin-top: 11rem;
+        margin-bottom: 0;
+        padding-bottom: 1rem;
+       
+}
 }

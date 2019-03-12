@@ -1,19 +1,28 @@
 .statistics {
     background: #1976D2;
-    h2{
+    .stat-header{
         text-align: center;
         font-size: 3em;
         font-family: 'open sans';
         color: #E3F2FD;
         padding-top: 7rem;
+        @media @phone {
+            padding-top: 3rem;
+        }
     }
+
 }
 
-.stat-features{
+.stat-features {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 8rem;
+    @media @phone {
+        margin-top: 5rem;
+        margin-top: 5rem;
+        flex-direction: column;
+    }
     .card {
         display: flex;
         justify-content: center;
@@ -23,14 +32,20 @@
         margin-left: 2rem;
         padding-right: 7rem;
         padding-left: 7rem;
+        @media @phone {
+            margin-bottom: 3rem;
+        }
         
         img{
             height: 25rem;
+            @media @phone {
+                height: 10rem;
+            }
         }
         h4 {
             font-size: 4rem;
             font-family: 'open sans';
-            color: black;
+            color: rgb(5, 16, 27);
             padding-top: 2rem;
 
         }
@@ -40,6 +55,10 @@
             font-family: 'open sans';
             color: #E3F2FD;
             margin-top: 3rem;
+            @media @phone {
+                line-height: 3rem;
+                font-size: 1.8rem;
+            }
         }
     }
 }

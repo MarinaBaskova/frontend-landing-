@@ -1,26 +1,68 @@
 .collection {
     background: #0D47A1;
+    padding-bottom: 4rem;
+    .collection-header {
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'open sans';
+        color: #E3F2FD;
+        padding-top: 7rem;
+        @media @phone {
+            line-height: 5rem; 
+            padding-top: 3rem; 
+        }
+    }
+    .collection-btn {
+        margin: 0 auto;
+        display: block;
+        width: 10%;
+        height: 3rem;
+        background-color: #1976D2;
+        color: #E3F2FD;
+        font-size: 1.7rem;
+        font-family: 'open sans';
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+            background-color: #E3F2FD;
+            color:  #1976D2;
+       }
+       @media @phone {
+        width: 40%;
+        height: 5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 5rem;
+       }
+    }
 }
 
 
-h2 {
-    text-align: center;
-    font-size: 3em;
-    font-family: 'open sans';
-    color: #E3F2FD;
-    padding-top: 7rem;
-}
+
 
 .stat-collection{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 8rem;
+    @media @phone {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
     .card {
+        @media @phone {text-align: center}
         img{
             height: 25rem;
+        @media @phone {
+            height: 15rem;
         }
-        p{
+        }
+        .card-text{
             text-align: center;
             font-size: 3em;
             font-family: 'open sans';
@@ -31,8 +73,11 @@ h2 {
 }
 .carousel{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding-bottom: 3rem;
+    @media @phone {
+        display: none;
+    }
     img{
         width: 50%;
     }

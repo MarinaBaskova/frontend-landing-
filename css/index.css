@@ -140,6 +140,13 @@ h3,
 h4,
 h5 {
   font-family: 'open sans';
+  letter-spacing: 2px;
+}
+.page {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+p {
   letter-spacing: 1px;
 }
 #header {
@@ -159,6 +166,15 @@ h5 {
   text-decoration: none;
   color: #E3F2FD;
 }
+#header #nav a:hover {
+  color: #1976D2;
+}
+@media (max-width: 500px) {
+  #header #nav {
+    justify-content: space-evenly;
+    margin-top: 5rem;
+  }
+}
 #banner {
   background-image: url(../Images/thomas-serer-413745-unsplash.png);
   background-color: #0D47A1;
@@ -167,38 +183,106 @@ h5 {
   color: #ffffff;
   padding: 14rem 0rem 14rem;
   text-align: center;
-  border: 2px solid red;
   height: 100vh;
 }
-#banner h1 {
+@media (max-width: 500px) {
+  #banner {
+    padding: 30rem 1.5rem 0rem;
+  }
+}
+.banner-header {
   font-size: 5rem;
-  line-height: 1.25em;
+  line-height: 3.25rem;
   margin: 0 0 2.5rem 0;
   padding: 0;
   font-family: 'open sans';
   color: #E3F2FD;
 }
-#banner p {
+@media (max-width: 500px) {
+  .banner-header {
+    font-size: 4rem;
+  }
+}
+.banner-text {
   font-size: 2rem;
   margin-bottom: 3.75rem;
   font-family: 'open sans';
   color: #E3F2FD;
 }
-#banner .banner-btn {
+@media (max-width: 500px) {
+  .banner-text {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+  }
+}
+.banner-btn {
   font-family: 'open sans';
   background-color: #1976D2;
   color: #E3F2FD;
   outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  width: 16rem;
+  height: 3rem;
+}
+.banner-btn:hover {
+  background-color: #E3F2FD;
+  color: #1976D2;
+}
+@media (max-width: 500px) {
+  .banner-btn {
+    width: 40%;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 }
 .collection {
   background: #0D47A1;
+  padding-bottom: 4rem;
 }
-h2 {
+.collection .collection-header {
   text-align: center;
-  font-size: 3em;
+  font-size: 3rem;
   font-family: 'open sans';
   color: #E3F2FD;
   padding-top: 7rem;
+}
+@media (max-width: 500px) {
+  .collection .collection-header {
+    line-height: 5rem;
+    padding-top: 3rem;
+  }
+}
+.collection .collection-btn {
+  margin: 0 auto;
+  display: block;
+  width: 10%;
+  height: 3rem;
+  background-color: #1976D2;
+  color: #E3F2FD;
+  font-size: 1.7rem;
+  font-family: 'open sans';
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.collection .collection-btn:hover {
+  background-color: #E3F2FD;
+  color: #1976D2;
+}
+@media (max-width: 500px) {
+  .collection .collection-btn {
+    width: 40%;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 5rem;
+  }
 }
 .stat-collection {
   display: flex;
@@ -206,10 +290,28 @@ h2 {
   align-items: center;
   margin-top: 8rem;
 }
+@media (max-width: 500px) {
+  .stat-collection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .stat-collection .card {
+    text-align: center;
+  }
+}
 .stat-collection .card img {
   height: 25rem;
 }
-.stat-collection .card p {
+@media (max-width: 500px) {
+  .stat-collection .card img {
+    height: 15rem;
+  }
+}
+.stat-collection .card .card-text {
   text-align: center;
   font-size: 3em;
   font-family: 'open sans';
@@ -218,8 +320,13 @@ h2 {
 }
 .carousel {
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .carousel {
+    display: none;
+  }
 }
 .carousel img {
   width: 50%;
@@ -227,18 +334,29 @@ h2 {
 .statistics {
   background: #1976D2;
 }
-.statistics h2 {
+.statistics .stat-header {
   text-align: center;
   font-size: 3em;
   font-family: 'open sans';
   color: #E3F2FD;
   padding-top: 7rem;
 }
+@media (max-width: 500px) {
+  .statistics .stat-header {
+    padding-top: 3rem;
+  }
+}
 .stat-features {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 8rem;
+}
+@media (max-width: 500px) {
+  .stat-features {
+    margin-top: 5rem;
+    flex-direction: column;
+  }
 }
 .stat-features .card {
   display: flex;
@@ -250,13 +368,23 @@ h2 {
   padding-right: 7rem;
   padding-left: 7rem;
 }
+@media (max-width: 500px) {
+  .stat-features .card {
+    margin-bottom: 3rem;
+  }
+}
 .stat-features .card img {
   height: 25rem;
+}
+@media (max-width: 500px) {
+  .stat-features .card img {
+    height: 10rem;
+  }
 }
 .stat-features .card h4 {
   font-size: 4rem;
   font-family: 'open sans';
-  color: black;
+  color: #05101b;
   padding-top: 2rem;
 }
 .stat-features .card p {
@@ -266,6 +394,12 @@ h2 {
   color: #E3F2FD;
   margin-top: 3rem;
 }
+@media (max-width: 500px) {
+  .stat-features .card p {
+    line-height: 3rem;
+    font-size: 1.8rem;
+  }
+}
 .footer {
   margin: 0 auto;
   padding-top: 10rem;
@@ -273,25 +407,63 @@ h2 {
   background: #0D47A1;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .footer {
+    padding-bottom: 0;
+  }
+}
 .footer .footer-text {
   font-size: 2.5rem;
   font-family: 'open sans';
   color: #E3F2FD;
 }
+@media (max-width: 500px) {
+  .footer .footer-text {
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    line-height: 4rem;
+  }
+}
 .footer-btn {
-  font-family: 'open sans';
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: block;
+  width: 10%;
+  height: 3rem;
   background-color: #1976D2;
   color: #E3F2FD;
+  font-size: 1.7rem;
+  font-family: 'open sans';
+  border: none;
   outline: none;
-  margin-top: 3rem;
-  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .footer-btn {
+    width: 40%;
+    height: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 5rem;
+  }
 }
 .copy-right {
   font-size: 1rem;
   font-family: 'open sans';
-  color: black;
+  color: #05101b;
   margin-top: 12rem;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .copy-right {
+    margin-top: 11rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+  }
 }
 #banner-about {
   background-image: url(../Images/thomas-serer-413745-unsplash.png);
