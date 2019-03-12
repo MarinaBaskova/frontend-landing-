@@ -3,28 +3,35 @@
     padding-bottom: 4rem;
     .collection-header {
         text-align: center;
-        font-size: 3rem;
+        font-size: 4rem;
         font-family: 'open sans';
         color: #E3F2FD;
-        padding-top: 7rem;
+        padding-top: 4rem;
+        font-weight: 700;
+        letter-spacing: 3px;
         @media @phone {
             line-height: 5rem; 
             padding-top: 3rem; 
         }
     }
     .collection-btn {
-        margin: 0 auto;
         display: block;
-        width: 10%;
-        height: 3rem;
+        margin: 0 auto;
+        font-family: 'open sans';
         background-color: #1976D2;
         color: #E3F2FD;
-        font-size: 1.7rem;
-        font-family: 'open sans';
-        border: none;
         outline: none;
-        border-radius: 5px;
+        border-radius: 4px;
         cursor: pointer;
+        border: none;
+        width: 15rem;
+        height: 5rem;
+        font-size: 2.1rem;
+        letter-spacing: 1px;
+        &:hover {
+            background-color: #E3F2FD;
+            color:  #1976D2;
+       }
         &:hover {
             background-color: #E3F2FD;
             color:  #1976D2;
@@ -41,13 +48,11 @@
 }
 
 
-
-
 .stat-collection{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
     @media @phone {
         flex-direction: column;
         justify-content: center;
@@ -55,16 +60,20 @@
         margin-top: 3rem;
     }
     .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @media @phone {text-align: center}
         img{
-            height: 25rem;
+            height: 15rem;
         @media @phone {
             height: 15rem;
         }
         }
         .card-text{
             text-align: center;
-            font-size: 3em;
+            font-size: 3rem;
             font-family: 'open sans';
             color: #E3F2FD;
             margin-top: 3rem;
