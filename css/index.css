@@ -170,7 +170,11 @@ p {
 }
 #header #nav .button-special {
   margin-right: 2rem;
-  border-radius: 4px;
+}
+@media (max-width: 500px) {
+  #header #nav .button-special {
+    margin-right: 0rem;
+  }
 }
 @media (max-width: 500px) {
   #header #nav {
@@ -190,7 +194,7 @@ p {
 }
 @media (max-width: 500px) {
   #banner {
-    padding: 30rem 1.5rem 0rem;
+    padding: 14rem 1.5rem 0rem;
   }
 }
 .banner-header {
@@ -293,7 +297,7 @@ p {
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 1px;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 .stat-collection {
@@ -319,6 +323,7 @@ p {
 @media (max-width: 500px) {
   .stat-collection .card {
     text-align: center;
+    margin-bottom: 4rem;
   }
 }
 .stat-collection .card img {
@@ -448,6 +453,7 @@ p {
     padding-right: 3rem;
     padding-left: 3rem;
     line-height: 4rem;
+    width: 100%;
   }
 }
 .footer-btn {
@@ -463,6 +469,10 @@ p {
   font-size: 2.1rem;
   letter-spacing: 1px;
   margin-top: 4rem;
+}
+.footer-btn:hover {
+  color: #1976D2;
+  background-color: #E3F2FD;
 }
 @media (max-width: 500px) {
   .footer-btn {
@@ -489,15 +499,34 @@ p {
     padding-bottom: 1rem;
   }
 }
+#header #nav .button-special {
+  margin-right: 2rem;
+}
+@media (max-width: 500px) {
+  #header #nav .button-special {
+    margin-right: 0rem;
+  }
+}
+@media (max-width: 500px) {
+  #header #nav {
+    justify-content: space-evenly;
+    margin-top: 5rem;
+  }
+}
 #banner-about {
   background-image: url(../Images/thomas-serer-413745-unsplash.png);
   background-color: #0D47A1;
   background-position: center center;
   background-size: cover;
   color: #ffffff;
-  padding: 14rem 0rem 14rem;
+  padding-top: 18rem;
   text-align: center;
   height: 100vh;
+}
+@media (max-width: 500px) {
+  #banner-about {
+    padding-top: 15rem;
+  }
 }
 #banner-about .inner {
   width: 50%;
@@ -506,40 +535,59 @@ p {
 #banner-about .inner h1 {
   font-size: 5rem;
   line-height: 1.25em;
-  margin: 0 0 2.5rem 0;
+  margin: 0 0 4.5rem 0;
   padding: 0;
   font-family: 'open sans';
   color: #E3F2FD;
   border-top: 3px solid #fcfcfc;
   border-bottom: 3px solid #fcfcfc;
 }
+@media (max-width: 500px) {
+  #banner-about .inner h1 {
+    font-size: 4rem;
+    margin: 0 0 2rem 0;
+  }
+}
 .team-member {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin-top: 20rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .team-member {
+    justify-content: center;
+    width: 103%;
+  }
 }
 .team-member .t-card {
+  width: 25.5%;
+  height: 100px;
+  margin: 3rem 2.5%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .team-member .t-card {
+    margin: 5rem 2.5%;
+  }
+}
+.team-member .t-card .t-card-header {
+  margin-bottom: 1.5rem;
+  color: #E3F2FD;
+  font-family: 'open sans';
   font-size: 2rem;
-  font-family: 'open sans';
-  line-height: 1.125;
+  font-weight: bold;
 }
-.team-member .t-card h4 {
-  margin-bottom: 1rem;
+.team-member .t-card .t-card-text {
+  margin-bottom: 1.5rem;
   color: #E3F2FD;
   font-family: 'open sans';
+  font-size: 1.8rem;
 }
-.team-member .t-card p {
-  margin-bottom: 3rem;
-  color: #E3F2FD;
-  font-family: 'open sans';
-}
-.team-member .t-card a {
+.team-member .t-card .git-link {
   text-decoration: none;
   font-family: 'open sans';
   color: #E3F2FD;
@@ -547,4 +595,11 @@ p {
   background-color: #1976D2;
   padding: 10px;
   border-radius: 7px;
+  width: 10rem;
+  font-size: 1.5rem;
+  height: 4rem;
+}
+.team-member .t-card .git-link:hover {
+  color: #1976D2;
+  background-color: #E3F2FD;
 }
