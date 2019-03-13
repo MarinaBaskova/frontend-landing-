@@ -200,7 +200,7 @@ p {
 .banner-header {
   font-size: 6rem;
   line-height: 10.25rem;
-  margin: 12rem 0 3.5rem 0;
+  margin: 21rem 0 3.5rem 0;
   padding: 0;
   font-family: 'open sans';
   color: #E3F2FD;
@@ -340,19 +340,6 @@ p {
   font-family: 'open sans';
   color: #E3F2FD;
   margin-top: 3rem;
-}
-.carousel {
-  text-align: center;
-  margin-top: 3rem;
-  padding-bottom: 3rem;
-}
-@media (max-width: 500px) {
-  .carousel {
-    display: none;
-  }
-}
-.carousel img {
-  width: 50%;
 }
 .statistics {
   background: #1976D2;
@@ -602,4 +589,57 @@ p {
 .team-member .t-card .git-link:hover {
   color: #1976D2;
   background-color: #E3F2FD;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+@media (max-width: 500px) {
+  .carousel {
+    display: none;
+  }
+}
+.carousel img {
+  width: 66%;
+  display: none;
+}
+.carousel .left-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  background-color: #333;
+  font-size: 47px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  top: 50%;
+  left: 27rem;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  color: #fff;
+  background-color: #333;
+  font-size: 47px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  top: 50%;
+  right: 26rem;
+  transform: translate(0, -50%);
 }
