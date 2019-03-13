@@ -494,6 +494,11 @@ p {
     margin-right: 0rem;
   }
 }
+@media (max-width: 800px) {
+  #header #nav {
+    justify-content: center;
+  }
+}
 @media (max-width: 500px) {
   #header #nav {
     justify-content: space-evenly;
@@ -506,44 +511,65 @@ p {
   background-position: center center;
   background-size: cover;
   color: #ffffff;
-  padding-top: 18rem;
+  padding-top: 11rem;
   text-align: center;
   height: 100vh;
 }
+@media (max-width: 800px) {
+  #banner-about {
+    padding-top: 7rem;
+    margin: 0;
+  }
+}
 @media (max-width: 500px) {
   #banner-about {
-    padding-top: 15rem;
+    padding-top: 11rem;
   }
 }
 #banner-about .inner {
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  #banner-about .inner {
+    margin-bottom: 10rem;
+  }
+}
 #banner-about .inner h1 {
   font-size: 5rem;
   line-height: 1.25em;
-  margin: 0 0 4.5rem 0;
+  margin: 0 0 5rem 0;
   padding: 0;
   font-family: 'open sans';
   color: #E3F2FD;
   border-top: 3px solid #fcfcfc;
   border-bottom: 3px solid #fcfcfc;
 }
+@media (max-width: 800px) {
+  #banner-about .inner h1 {
+    margin: 0 0 2rem 0;
+  }
+}
 @media (max-width: 500px) {
   #banner-about .inner h1 {
-    font-size: 4rem;
-    margin: 0 0 2rem 0;
+    font-size: 3rem;
+    margin: 0 0 -8rem 0;
   }
 }
 .team-member {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 @media (max-width: 800px) {
   .team-member {
     justify-content: center;
-    width: 103%;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .team-member {
+    padding-top: 1rem;
   }
 }
 .team-member .t-card {
@@ -556,9 +582,16 @@ p {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .team-member .t-card {
+    width: 33%;
+    margin: 1.5rem 7.5%;
+  }
+}
 @media (max-width: 500px) {
   .team-member .t-card {
-    margin: 5rem 2.5%;
+    margin: 1.5rem 9.5%;
+    width: 30.5%;
   }
 }
 .team-member .t-card .t-card-header {
@@ -568,11 +601,22 @@ p {
   font-size: 2rem;
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .team-member .t-card .t-card-header {
+    margin-bottom: 1rem;
+  }
+}
 .team-member .t-card .t-card-text {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
   color: #E3F2FD;
   font-family: 'open sans';
   font-size: 1.8rem;
+}
+@media (max-width: 500px) {
+  .team-member .t-card .t-card-text {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+  }
 }
 .team-member .t-card .git-link {
   text-decoration: none;
@@ -587,6 +631,73 @@ p {
   height: 4rem;
 }
 .team-member .t-card .git-link:hover {
+  color: #1976D2;
+  background-color: #E3F2FD;
+}
+@media (max-width: 800px) {
+  .team-member .special {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .team-member .special {
+    margin-bottom: 1rem;
+  }
+}
+.company-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+@media (max-width: 800px) {
+  .company-card {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .company-card {
+    margin-bottom: 0rem;
+  }
+}
+.company-card .soccer-ball-img {
+  margin-bottom: 2rem;
+  width: 10rem;
+}
+@media tablet {
+  .company-card .soccer-ball-img {
+    margin-bottom: 1rem;
+  }
+}
+.company-card .c-card-header {
+  margin-bottom: 1.5rem;
+  color: #E3F2FD;
+  font-family: 'open sans';
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.company-card .c-card-text {
+  margin-bottom: 1.8rem;
+  color: #E3F2FD;
+  font-family: 'open sans';
+  font-size: 1.8rem;
+}
+.company-card .git-link {
+  text-decoration: none;
+  font-family: 'open sans';
+  color: #E3F2FD;
+  font-weight: 700;
+  background-color: #1976D2;
+  padding: 10px;
+  border-radius: 7px;
+  width: 10rem;
+  font-size: 1.5rem;
+  height: 4rem;
+  text-align: center;
+}
+.company-card .git-link:hover {
   color: #1976D2;
   background-color: #E3F2FD;
 }
