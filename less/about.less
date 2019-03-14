@@ -1,21 +1,11 @@
 #header {
     #nav {
-        .button-special {
-            margin-right: 2rem;
-
-            @media @phone {
-                margin-right: 0rem;
-            }
-        }
-        a{
+        a {
             margin-right: 3rem;
         }
-
         @media @tablet {
             justify-content: center;
-
         }
-
         @media @phone {
             justify-content: space-evenly;
             margin-top: 2rem;
@@ -23,52 +13,37 @@
     }
 }
 
-
 #banner-about {
-    background-image: url(../Images/thomas-serer-413745-unsplash.png);
-    background-color: #0D47A1;
-    background-position: center center;
-    background-size: cover;
-    color: #ffffff;
+    .basicBanner();
     padding-top: 11rem;
-    text-align: center;
-    height: 100vh;
-
     @media @tablet {
         padding-top: 7rem;
         margin: 0;
     }
-
     @media @phone {
         padding-top: 8rem;
         padding-bottom: 120rem;
     }
-
     .inner {
         width: 50%;
         margin: 0 auto;
-
         @media @phone {
             margin-bottom: 2rem;
             width: 70%;
         }
-
         h1 {
             font-size: 5rem;
             line-height: 10.25rem;
             margin: 4rem 0 5rem 0;
             padding: 0;
-            font-family: 'open sans';
-            color: #E3F2FD;
-            border-top: 3px solid #fcfcfc;
-            border-bottom: 3px solid #fcfcfc;
-
+            color: @font-color;
+            border-top: 3px solid @font-color;
+            border-bottom: 3px solid @font-color;
             @media @tablet {
                 font-size: 4rem;
                 line-height: 7.25rem;
                 margin: 4rem 0 4rem 0;
             }
-
             @media @phone {
                 font-size: 2rem;
                 margin-top: 0;
@@ -82,112 +57,72 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
     @media @tablet {
         justify-content: center;
         width: 100%;
     }
-
     @media @phone {
         padding-top: 1rem;
     }
-
     .t-card {
         width: 25.5%;
         height: 100px;
         margin: 3rem 2.5%;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
+        color: @font-color;
+        .center(column);
         @media @tablet {
             width: 33%;
             margin: 2.7rem 7.5%;
         }
-
         @media @phone {
             margin: 2.5rem 9.5%;
             width: 33%;
         }
-
         .t-card-header {
             margin-bottom: 1.5rem;
-            color: #E3F2FD;
-            font-family: 'open sans';
+            color: @font-color;
             font-size: 2rem;
             font-weight: bold;
-
             @media @phone {
                 margin-bottom: 1rem;
             }
         }
-
         .t-card-text {
             margin-bottom: 1.8rem;
-            color: #E3F2FD;
-            font-family: 'open sans';
+            color: @font-color;
             font-size: 1.8rem;
-
             @media @phone {
                 margin-bottom: 1.5rem;
                 font-size: 1.6rem;
             }
         }
-
         .git-link {
-            text-decoration: none;
-            font-family: 'open sans';
-            color: #E3F2FD;
-            font-weight: 700;
-            background-color: #1976D2;
-            padding: 10px;
-            border-radius: 7px;
-            width: 10rem;
-            font-size: 1.5rem;
-            height: 4rem;
-
-            &:hover {
-                color: #1976D2;
-                background-color: #E3F2FD;
-            }
+            .link()
         }
     }
-
     .special {
         @media @tablet {
             margin-bottom: 1rem;
         }
-
         @media @phone {
             margin-bottom: 1rem;
         }
     }
-
 }
 
 .company-card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    .center(column);
     margin-bottom: 9rem;
-
-
     @media @tablet {
         margin-bottom: 1rem;
     }
-
     @media @phone {
         margin-bottom: 0rem;
     }
-
     .soccer-ball-img {
         margin-bottom: 2rem;
         width: 10rem;
-
-        @media tablet {
+        @media @tablet {
             margin-bottom: 1rem;
         }
         @media @phone {
@@ -195,11 +130,9 @@
             width: 7rem;
         }
     }
-
     .c-card-header {
         margin-bottom: 1.5rem;
-        color: #E3F2FD;
-        font-family: 'open sans';
+        color: @font-color;
         font-size: 2rem;
         font-weight: bold;
         line-height: 1.5;
@@ -208,30 +141,12 @@
             margin-bottom: 1rem;
         }
     }
-
     .c-card-text {
         margin-bottom: 1.8rem;
-        color: #E3F2FD;
-        font-family: 'open sans';
+        color: @font-color;     
         font-size: 1.8rem;
     }
-
     .git-link {
-        text-decoration: none;
-        font-family: 'open sans';
-        color: #E3F2FD;
-        font-weight: 700;
-        background-color: #1976D2;
-        padding: 10px;
-        border-radius: 7px;
-        width: 10rem;
-        font-size: 1.5rem;
-        height: 4rem;
-        text-align: center;
-
-        &:hover {
-            color: #1976D2;
-            background-color: #E3F2FD;
-        }
+        .link();
     }
 }
