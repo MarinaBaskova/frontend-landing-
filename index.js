@@ -19,7 +19,7 @@ window.addEventListener('load', function(){
 let icons = document.querySelectorAll('.icon');
 
 let allIcons = Array.from(icons);
-console.log(allIcons)
+
 
 allIcons.forEach(function(icon){
     icon.addEventListener('mouseover', function(){
@@ -28,4 +28,21 @@ allIcons.forEach(function(icon){
     icon.addEventListener('mouseout', function(){
         icon.style.transform= 'scale(1)'
     })
+})
+
+
+//P ELEMENT ANIMATION
+ let pTags = document.querySelectorAll('.stat-text');
+ let allpTags = Array.from(pTags);
+
+allpTags.map( p => {
+  p.addEventListener('mouseover', p => {
+    TweenMax.to(p.currentTarget, 1, {scale: 1.1, ease:Bounce.easeOut})
+  })
+})
+
+allpTags.map( p => {
+  p.addEventListener('mouseout', p => {
+    TweenMax.to(p.currentTarget, 1, {scale: 1, ease:Bounce.easeOut})
+  })
 })
