@@ -1,6 +1,7 @@
 .statistics {
     background: #1976D2;
-    .stat-header{
+
+    .stat-header {
         text-align: center;
         font-size: 4rem;
         font-family: 'open sans';
@@ -8,8 +9,13 @@
         padding-top: 4rem;
         font-weight: 700;
         letter-spacing: 3px;
+
         @media @phone {
             padding-top: 3rem;
+            font-size: 3rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            line-height: 4rem;
         }
     }
 
@@ -20,14 +26,17 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 8rem;
+
     @media @tablet {
         flex-direction: column;
     }
+
     @media @phone {
         margin-top: 5rem;
         margin-top: 5rem;
         flex-direction: column;
     }
+
     .card {
         display: flex;
         justify-content: center;
@@ -37,16 +46,19 @@
         margin-left: 2rem;
         padding-right: 7rem;
         padding-left: 7rem;
+
         @media @phone {
             margin-bottom: 3rem;
         }
-        
-        img{
+
+        img {
             height: 13rem;
+
             @media @phone {
                 height: 10rem;
             }
         }
+
         h4 {
             font-size: 2rem;
             font-family: 'open sans';
@@ -55,12 +67,14 @@
             font-weight: bold;
 
         }
-        p{
+
+        p {
             text-align: center;
             font-size: 2rem;
             font-family: 'open sans';
             color: #E3F2FD;
             margin-top: 3rem;
+
             @media @phone {
                 line-height: 3rem;
                 font-size: 1.8rem;

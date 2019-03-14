@@ -180,6 +180,8 @@ p {
   #header #nav {
     justify-content: space-evenly;
     margin-top: 5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }
 #banner {
@@ -194,7 +196,7 @@ p {
 }
 @media (max-width: 500px) {
   #banner {
-    padding: 25rem 1.5rem 0rem;
+    padding: 16rem 1.5rem 0rem;
   }
 }
 .banner-header {
@@ -207,8 +209,10 @@ p {
 }
 @media (max-width: 500px) {
   .banner-header {
-    font-size: 4rem;
-    margin-top: 2rem;
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
   }
 }
 hr {
@@ -234,6 +238,8 @@ hr {
   .banner-text {
     font-size: 1.4rem;
     letter-spacing: 0.5px;
+    width: 100%;
+    line-height: 2rem;
   }
 }
 .banner-btn {
@@ -342,7 +348,7 @@ hr {
 }
 @media (max-width: 800px) {
   .stat-collection .card {
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
   }
 }
 @media (max-width: 500px) {
@@ -381,6 +387,10 @@ hr {
 @media (max-width: 500px) {
   .statistics .stat-header {
     padding-top: 3rem;
+    font-size: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    line-height: 4rem;
   }
 }
 .stat-features {
@@ -458,24 +468,24 @@ hr {
   font-size: 3rem;
   font-family: 'open sans';
   color: #E3F2FD;
-  width: 50%;
+  width: 84%;
   letter-spacing: 1px;
   line-height: 4rem;
   margin: 0 auto;
 }
 @media (max-width: 800px) {
   .footer .footer-text {
-    width: 80%;
+    width: 87%;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 @media (max-width: 500px) {
   .footer .footer-text {
     text-align: center;
     margin: 0 auto;
-    padding-right: 3rem;
-    padding-left: 3rem;
-    line-height: 4rem;
-    width: 100%;
+    line-height: 3rem;
+    width: 72%;
   }
 }
 .footer-btn {
@@ -747,50 +757,69 @@ hr {
   overflow: hidden;
   margin-top: 16px;
 }
+@media (max-width: 800px) {
+  .carousel {
+    margin-top: -34px;
+  }
+}
 @media (max-width: 500px) {
   .carousel {
     display: none;
   }
 }
 .carousel img {
-  width: 66%;
   display: none;
 }
 @media (max-width: 800px) {
   .carousel img {
-    width: 100%;
+    width: 88%;
   }
 }
 .carousel .left-button {
-  display: flex;
-  justify-content: center;
-  align-items: none;
-  flex-direction: row;
-  color: #fff;
-  background-color: #333;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: #E3F2FD;
   font-size: 47px;
-  border-radius: 50%;
-  position: absolute;
+  position: relative;
   width: 50px;
   height: 50px;
   cursor: pointer;
-  top: 50%;
-  left: 27rem;
+  top: 3%;
+  left: 5rem;
   transform: translate(0, -50%);
 }
+@media (max-width: 1200px) {
+  .carousel .left-button {
+    left: 5rem;
+  }
+}
+@media (max-width: 800px) {
+  .carousel .left-button {
+    left: 4rem;
+  }
+}
 .carousel .right-button {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  color: #fff;
-  background-color: #333;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  color: #E3F2FD;
   font-size: 47px;
-  border-radius: 50%;
-  position: absolute;
+  position: relative;
   width: 50px;
   height: 50px;
   cursor: pointer;
-  top: 50%;
-  right: 26rem;
+  top: 3%;
+  right: 5rem;
   transform: translate(0, -50%);
+}
+@media (max-width: 1200px) {
+  .carousel .right-button {
+    right: 5rem;
+  }
+}
+@media (max-width: 800px) {
+  .carousel .right-button {
+    right: 4rem;
+  }
 }

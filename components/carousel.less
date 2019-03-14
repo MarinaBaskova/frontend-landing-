@@ -1,4 +1,4 @@
-.carousel{
+.carousel {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -8,49 +8,68 @@
     position: relative;
     overflow: hidden;
     margin-top: 16px;
+
+    @media @tablet {
+        margin-top: -34px;
+    }
+
     @media @phone {
         display: none;
     }
 
     img {
-        width: 66%;
         display: none;
+
         @media @tablet {
-            width: 100%;
+            width: 88%;
         }
-      }
-    .left-button {
-        display: flex;
-        justify-content: center;
-        align-items: none;
-        flex-direction: row;
-        color: #fff;
-        background-color: #333;
-        font-size: 47px;
-        border-radius: 50%;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        top: 50%;
-        left: 27rem;
-        transform: translate(0, -50%);
     }
-    .right-button {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        color: #fff;
-        background-color: #333;
+
+    .left-button {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        color: #E3F2FD;
         font-size: 47px;
-        border-radius: 50%;
-        position: absolute;
+
+        position: relative;
         width: 50px;
         height: 50px;
         cursor: pointer;
-        top: 50%;
-        right: 26rem;
+        top: 3%;
+        left: 5rem;
         transform: translate(0, -50%);
+
+        @media @desktop {
+            left: 5rem;
+        }
+
+        @media @tablet {
+            left: 4rem;
+        }
+    }
+
+    .right-button {
+        display: block;
+        font-weight: bold;
+        text-align: center;
+        color: #E3F2FD;
+        font-size: 47px;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        top: 3%;
+        right: 5rem;
+        transform: translate(0, -50%);
+
+        @media @desktop {
+            right: 5rem;
+        }
+
+        @media @tablet {
+            right: 4rem;
+        }
     }
 
 }
