@@ -14,3 +14,18 @@ window.addEventListener('load', function(){
   tl.from(bannerBtn, 0.5, {scale:.5, autoAlpha:0, delay:0.25});
 })
 
+// Collection icon Animation
+
+let icons = document.querySelectorAll('.icon');
+
+let allIcons = Array.from(icons);
+console.log(allIcons)
+
+allIcons.forEach(function(icon){
+    icon.addEventListener('mouseover', function(){
+        icon.style.transform= 'scale(1.3)'
+    })
+    icon.addEventListener('mouseout', function(){
+        icon.style.transform= 'scale(1)'
+    })
+})
