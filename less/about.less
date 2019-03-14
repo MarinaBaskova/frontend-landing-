@@ -7,6 +7,9 @@
                 margin-right: 0rem;
             }
         }
+        a{
+            margin-right: 3rem;
+        }
 
         @media @tablet {
             justify-content: center;
@@ -15,7 +18,7 @@
 
         @media @phone {
             justify-content: space-evenly;
-            margin-top: 5rem;
+            margin-top: 2rem;
         }
     }
 }
@@ -34,11 +37,11 @@
     @media @tablet {
         padding-top: 7rem;
         margin: 0;
-
     }
 
     @media @phone {
-        padding-top: 11rem;
+        padding-top: 8rem;
+        padding-bottom: 120rem;
     }
 
     .inner {
@@ -46,13 +49,14 @@
         margin: 0 auto;
 
         @media @phone {
-            margin-bottom: 10rem;
+            margin-bottom: 2rem;
+            width: 70%;
         }
 
         h1 {
             font-size: 5rem;
-            line-height: 1.25em;
-            margin: 0 0 5rem 0;
+            line-height: 10.25rem;
+            margin: 4rem 0 5rem 0;
             padding: 0;
             font-family: 'open sans';
             color: #E3F2FD;
@@ -60,12 +64,15 @@
             border-bottom: 3px solid #fcfcfc;
 
             @media @tablet {
-                margin: 0 0 1rem 0;
+                font-size: 4rem;
+                line-height: 7.25rem;
+                margin: 4rem 0 4rem 0;
             }
 
             @media @phone {
-                font-size: 3rem;
-                margin: 0 0 -8rem 0;
+                font-size: 2rem;
+                margin-top: 0;
+                margin-bottom: 0;
             }
         }
     }
@@ -97,12 +104,12 @@
 
         @media @tablet {
             width: 33%;
-            margin: 1.5rem 7.5%;
+            margin: 2.7rem 7.5%;
         }
 
         @media @phone {
-            margin: 1.5rem 9.5%;
-            width: 30.5%;
+            margin: 2.5rem 9.5%;
+            width: 33%;
         }
 
         .t-card-header {
@@ -165,7 +172,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5rem;
+    margin-bottom: 9rem;
+
 
     @media @tablet {
         margin-bottom: 1rem;
@@ -182,6 +190,10 @@
         @media tablet {
             margin-bottom: 1rem;
         }
+        @media @phone {
+            margin-bottom: 1.5rem;
+            width: 7rem;
+        }
     }
 
     .c-card-header {
@@ -191,6 +203,10 @@
         font-size: 2rem;
         font-weight: bold;
         line-height: 1.5;
+        @media @phone {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
     }
 
     .c-card-text {
