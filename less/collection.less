@@ -10,8 +10,9 @@
         font-weight: 700;
         letter-spacing: 3px;
         @media @phone {
-            line-height: 5rem; 
-            padding-top: 3rem; 
+            line-height: 5rem;
+            padding-top: 3rem;
+            font-size: 3rem;
         }
     }
     .collection-btn {
@@ -53,6 +54,9 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 5rem;
+    @media @tablet {
+        flex-direction: column;
+    }
     @media @phone {
         flex-direction: column;
         justify-content: center;
@@ -64,6 +68,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media @tablet {
+      margin-bottom: 2rem;
+        }
         @media @phone {
             text-align: center;
             margin-bottom: 4rem;
