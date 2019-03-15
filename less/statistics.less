@@ -48,15 +48,30 @@
             color: @stat-color;
             padding-top: 2rem;
             font-weight: bold;
+            @media @tablet {
+                font-size: 3rem;
+            }
         }
         p {
             text-align: center;
             font-size: 2rem;
             color: @font-color;
             margin-top: 3rem;
+            width: 130%;
+            line-height: 1.5;
+            @media @desktop{
+                width: 154%;
+            }
+            @media @tablet{
+                font-size: 2.7rem;
+                margin-top: 3rem;
+                width: 70%;
+                line-height: 1.6;
+            }
             @media @phone {
                 line-height: 3rem;
                 font-size: 1.8rem;
+                width: 122%;
             }
         }
     }
